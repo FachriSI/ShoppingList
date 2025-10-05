@@ -3,14 +3,10 @@ package com.example.shoppinglist
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import com.example.shoppinglist.ui.theme.ShoppingListTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.MaterialTheme
@@ -23,10 +19,11 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.unit.dp
-import com.example.shoppinglist.Component.ItemInput
-import com.example.shoppinglist.Component.SearchInput
-import com.example.shoppinglist.Component.ShoppingList
-import com.example.shoppinglist.Component.Title
+import com.example.shoppinglist.component.ItemInput
+import com.example.shoppinglist.component.SearchInput
+import com.example.shoppinglist.component.ShoppingList
+import com.example.shoppinglist.component.Title
+import com.example.shoppinglist.ui.theme.screen.MainScreen
 
 
 class MainActivity : ComponentActivity() {
@@ -38,7 +35,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    ShoppingListApp()
+                    MainScreen()
                 }
             }
         }

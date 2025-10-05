@@ -1,4 +1,4 @@
-package com.example.shoppinglist.Component
+package com.example.shoppinglist.component
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
